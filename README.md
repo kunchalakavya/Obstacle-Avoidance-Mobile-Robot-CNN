@@ -1,90 +1,39 @@
 🚗 Obstacle Avoidance Mobile Robot using CNN
-📌 Project Overview
+📌 Overview
 
-This project presents a vision-based obstacle avoidance mobile robot using a Convolutional Neural Network (CNN).
-The robot captures real-time images using a camera, processes them through a trained CNN model, and predicts the direction to avoid obstacles.
+This project implements an autonomous mobile robot capable of avoiding obstacles using a Convolutional Neural Network (CNN). The robot captures real-time images, processes them using deep learning, and predicts movement direction.
 
-The system enables autonomous navigation without human intervention.
+🎯 Features
 
-🎯 Objectives
+Real-time obstacle detection
 
-Develop a CNN model for obstacle detection
+Autonomous navigation
 
-Enable autonomous navigation
+CNN-based image classification
 
-Reduce collision risk
+Motor control system
 
-Implement real-time image processing
+🛠️ Technologies Used
 
-🧠 Technologies Used
-
-Python 3.8
+Python
 
 TensorFlow / Keras
 
 OpenCV
 
-NumPy
+Raspberry Pi / Arduino
 
-Raspberry Pi / Microcontroller
+📂 Project Structure
 
-DC Motors & Motor Driver
+train_model.py – CNN training
 
-⚙️ System Architecture
+robot_control.py – Robot movement control
 
-Camera → CNN Model → Direction Prediction → Motor Control → Robot Movement
+model/ – Saved trained model
 
-🧪 Dataset
-
-The dataset consists of labeled images categorized into:
-
-Forward
-
-Left
-
-Right
-
-Stop
-
-Images were collected using the robot’s camera in different environments.
-
-🏗️ CNN Model Architecture
-
-Convolution Layer
-
-ReLU Activation
-
-MaxPooling
-
-Flatten
-
-Dense Layers
-
-Softmax Output (4 classes)
-
-📊 Model Performance
-
-Accuracy: XX%
-
-Loss: XX
-
-Tested in real-time environment
+dataset/ – Training images
 
 🚀 How to Run
 pip install -r requirements.txt
 python train_model.py
 python robot_control.py
-📷 Output
-
-The robot moves:
-
-Forward when path is clear
-
-Left or Right when obstacle detected
-
-Stops when no safe path available
-
-👩‍💻 Developed By
-
-K. Kavya
-Electronics and Communication Engineering
